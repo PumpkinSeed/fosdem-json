@@ -20,10 +20,7 @@ func (x *NullString) IsZero() bool {
 
 func main() {
 	var s = TestStruct{
-		Data: NullString{
-			Valid: false,
-			Value: "empty",
-		},
+		Data: NullString{},
 	}
 
 	result, err := json.Marshal(s)
